@@ -44,7 +44,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={{fontWeight:'bold', color:'lightblue',fontSize:25}}> {info} {"\n"} </Text> 
-      <Text style={{fontWeight:'bold', color:'lightblue',fontSize:25}}> {random} {"\n"} </Text> 
       <Text style={{fontWeight:'bold', color:'white',fontSize:15}}> {text} {"\n"} </Text> 
       <TextInput keyboardType='numeric' returnKeyType='done' placeholder='Kirjoita luku' placeholderTextColor={'grey'} style={{borderBottomWidth:2, color:'white'}} onChangeText={number => setNumber(number)} value={Number(number)} /> 
       <Button title='Arvaa' onPress={() => painike(number)}/>
